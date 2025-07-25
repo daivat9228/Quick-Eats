@@ -6,9 +6,10 @@ import { BrowserRouter as BrouserRouter } from "react-router-dom";
 import StoreContext from "./context/StoreContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrouserRouter>
-    <StoreContext>
-      <App />
-    </StoreContext>
-  </BrouserRouter>
+  <BrouserRouter basename="/Quick-Eats">
+  <StoreContext>
+    <App />
+  </StoreContext>
+</BrouserRouter>
+
 );
