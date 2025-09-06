@@ -5,7 +5,7 @@ const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div
       id="explore-menu"
-      className="flex flex-col gap-5 pt-15   mx-20  overflow-x-scroll overflow-auto scrollbar-hide "
+      className="flex flex-col gap-5 pt-15 mx-10 xl:mx-20 lg:mx-15 md:mx-10 sm:mx-10"
     >
       <h1 className="font-bold text-4xl text-zinc-800">Explore our menu</h1>
       <p className="text-md font-semibold text-zinc-800">
@@ -14,7 +14,7 @@ const ExploreMenu = ({ category, setCategory }) => {
       </p>
       <div
         id="explore-menu-list"
-        className="flex items-center justify-between text-center gap-7.5 mx-0 my-5"
+        className="flex items-center justify-between text-center gap-7.5 mx-0 my-5 overflow-x-scroll overflow-auto scrollbar-hide"
       >
         {menu_list.map((item, index) => {
           return (

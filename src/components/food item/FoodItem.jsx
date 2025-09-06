@@ -25,7 +25,7 @@ const FoodItem = ({ id, name, description, image, price }) => {
             onClick={() => setItemCount(addToCart(id))}
           />
         ) : (
-          <div className="food-item-counter absolute bottom-4 right-4 flex items-center p-1.5 gap-2.5 rounded-full bg-white">
+          <div className="absolute bottom-4 right-4 flex items-center p-1 gap-2 rounded-full bg-white">
             <img
               src={assets.remove_icon_red}
               onClick={() => setItemCount(removeFromCart(id))}

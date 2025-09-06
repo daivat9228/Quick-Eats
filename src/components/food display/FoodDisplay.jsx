@@ -8,7 +8,7 @@ const FoodDisplay = ({category}) => {
 
   return (
     <div>
-     <div id="food_display" className='my-1 pt-10 pb-20 mx-20'>
+     <div id="food_display" className='my-1 pt-10 pb-20 mx-20 xl:mx-20 lg:mx-15 md:mx-10 sm:mx-10'>
           <h2 className='font-semibold text-3xl'>Top dishes near you</h2>
           <div id='food-display-list' className='grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-5 mt-5'>
                {food_list.map((item,index) => {

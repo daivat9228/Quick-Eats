@@ -3,8 +3,8 @@ import { assets } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div id="footer" className=" w-full flex flex-col justify-center items-center text-white bg-zinc-700 gap-5 px-20 py-5 pt-20">
-      <div id="footer-content" className="w-full grid grid-cols-[2fr_1fr_1fr] gap-5">
+    <div id="footer" className=" w-full flex flex-col justify-center items-center text-white bg-zinc-700 gap-5 px-20 py-5 pt-20 sm:px-20">
+      <div id="footer-content" className="w-full grid grid-cols-[2fr_1fr_1fr] gap-5 max-[750px]:flex max-[750px]:flex-col max-[750px]:gap-9">
         <div id="footer-content-left" className="flex flex-col items-start gap-5 ">
           <img src={assets.logo} alt="" />
           <p className="text-sm max-w-110">
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-full h-[2px] my-5 mx-0 bg-zinc-400 border-none"/>
-      <p id="footer-copyright">Copyright 2025 @ Tomato.com - All Right Reserved.</p>
+      <p id="footer-copyright" className="max-[750px]:text-center">Copyright 2025 @ Tomato.com - All Right Reserved.</p>
     </div>
   );
 };
