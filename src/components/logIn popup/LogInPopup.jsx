@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import { assets } from "../../assets/assets";
 
 const LogInPopup = ({ setShowLogin }) => {
+  
   const [crrStatus, setCrrStatus] = useState("Sign Up");
 
   return (
     <div
       id="login-popup"
-      className="fixed z-[1] w-full h-full  backdrop-blur-xs  grid"
+      className="fixed z-[1] w-full h-full  backdrop-blur-xs  grid "
     >
       <form
         id="login-popup-container"
-        className="place-self-center w-[max(23vw,330px)] text-zinc-600 bg-white flex flex-col gap-6 rounded-lg p-6"
+        className="place-self-center w-[max(23vw,330px)] text-zinc-600 bg-white flex flex-col gap-6 rounded-lg p-6 shadow-2xl"
       >
         <div
           id="login-pop-title"

@@ -24,7 +24,6 @@ function App() {
           <Route path="/place-order" element={<PlaceOrder />} />
         </Routes>
         <Footer />
-
       </div>
     </>
   );

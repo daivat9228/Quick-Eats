@@ -43,7 +43,7 @@ const Navbar = ({ setShowLogin }) => {
         {/* Desktop menu: visible >= md */}
         <nav className="hidden md:flex md:items-center md:gap-8 lg:gap-10 font-semibold text-zinc-700">
           <Link to="/" className={`cursor-pointer ${menu === "home" ? "underline underline-offset-4 text-orange-600" : ""}`}>Home</Link>
-          <Link to="/menu" className={`cursor-pointer ${menu === "menu" ? "underline underline-offset-4 text-orange-600" : ""}`}>Menu</Link>
+         
           <Link to="/mobile-app" className={`cursor-pointer ${menu === "mobile-app" ? "underline underline-offset-4 text-orange-600" : ""}`}>Mobile App</Link>
           <Link to="/contact-us" className={`cursor-pointer ${menu === "contact-us" ? "underline underline-offset-4 text-orange-600" : ""}`}>Contact Us</Link>
         </nav>
@@ -92,9 +92,7 @@ const Navbar = ({ setShowLogin }) => {
             <li>
               <Link to="/" onClick={() => setMobileOpen(false)} className={`block ml-2 py-2 ${menu === "home" ? "text-orange-600" : ""}`}>Home</Link>
             </li>
-            <li>
-              <Link to="/menu" onClick={() => setMobileOpen(false)} className={`block ml-2 py-2 ${menu === "menu" ? "text-orange-600" : ""}`}>Menu</Link>
-            </li>
+           
             <li>
               <Link to="/mobile-app" onClick={() => setMobileOpen(false)} className={`block ml-2 py-2 ${menu === "mobile-app" ? "text-orange-600" : ""}`}>Mobile App</Link>
             </li>
