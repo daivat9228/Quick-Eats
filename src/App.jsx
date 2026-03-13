@@ -10,7 +10,6 @@ import LogInPopup from "./components/logIn popup/LogInPopup";
 
 function App() {
   // State to control the visibility of the login popup
-  // This state is used to toggle the login popup on and off
   const [showLogin, setShowLogin] = useState(false);
 
   return (
