@@ -49,20 +49,3 @@ const StoreContext = ({ children }) => {
 };
 
 export default StoreContext;
-
-
-// import { createContext } from "react";
-// import { food_list } from "../assets/assets";
-
-// export const StoreContext = createContext( );
-
-// const StoreContextProvider = ({ children }) => {
-//   const contextValue = {
-//      food_list
-//   };
-//   return (
-//     <StoreContextProvider value={contextValue}>{children}</StoreContextProvider>
-//   );
-// };
-
-// export default StoreContextProvider;
