@@ -63,17 +63,17 @@ const LogInPopup = ({ setShowLogin }) => {
           </p>
         </div>
         {crrStatus === "Sign Up" ? (
-          <p onClick={() => setCrrStatus("login")} className="text-sm ">
+          <p  className="text-sm ">
             Already have an account?{" "}
-            <span className="text-orange-600 font-semibold cursor-pointer">
+            <span onClick={() => setCrrStatus("login")} className="text-orange-600 font-semibold cursor-pointer">
               Login here
             </span>
           </p>
         ) :
         (
-          <p onClick={() => setCrrStatus("Sign Up")} className="text-sm ">
+          <p  className="text-sm ">
             Create a new account?{" "}
-            <span className="text-orange-600 font-semibold cursor-pointer">
+            <span onClick={() => setCrrStatus("Sign Up")} className="text-orange-600 font-semibold cursor-pointer">
               Click here
             </span>
           </p>
