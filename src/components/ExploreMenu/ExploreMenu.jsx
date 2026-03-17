@@ -1,7 +1,10 @@
-import React from "react";
-import { menu_list } from "../../assets/assets"; 
+import React, { useContext } from "react";
+import { storeContext } from "../../context/StoreContext";
 
 const ExploreMenu = ({ category, setCategory }) => {
+
+  const { menu_list } = useContext(storeContext);
+  
   return (
     <div
       id="explore-menu"
